@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Message Clignotant</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        
+        #message {
+            font-size: 2em;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .blink {
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0% { color: black; }
+            50% { color: red; }
+            100% { color: black; }
+        }
+    </style>
+</head>
+<body>
+    <div id="message" class="blink">
+        Je T'aime Célia
+    </div>
+</body>
+</html>
