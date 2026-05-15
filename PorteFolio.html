@@ -1,0 +1,510 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louis Erbisti - Game Designer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for LinkedIn icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Fixed Header with Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <!-- Logo/Brand -->
+                <div class="logo">Louis Erbisti</div>
+                
+                <!-- Navigation Menu -->
+                <ul class="nav-menu">
+                    <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                    <li><a href="#apropos" class="nav-link">À propos</a></li>
+                    <li><a href="#ressources" class="nav-link">Ressources</a></li>
+                    <li><a href="#audio" class="nav-link">Audio</a></li>
+                    <li><a href="#cv" class="nav-link">CV</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Section 1: Accueil (Home/Hero) -->
+        <section id="accueil" class="section accueil">
+            <div class="container">
+                <h1 class="hero-title">Louis Erbisti</h1>
+                <p class="hero-subtitle">Game Designer | Level Designer | Narrative Designer</p>
+                <p class="hero-text">
+                    Étudiant en deuxième année Game Design à Brassart Toulouse, passionné par 
+                    la création de jeux vidéo. Spécialisé en Level Design et Narrative Design, 
+                    avec des compétences en programmation Unreal Engine et Unity.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 2: À propos (About) -->
+        <section id="apropos" class="section apropos">
+            <div class="container">
+                <h2>À propos</h2>
+                <p>
+                    Je suis un game designer créatif et passionné, actuellement en deuxième année 
+                    d'études à Brassart Toulouse. Ma spécialité principale est le Level Design et 
+                    le Narrative Design, où je crée des expériences de jeu engageantes et mémorables.
+                </p>
+                <p>
+                    Au-delà de ces domaines, j'ai acquis des compétences solides en programmation 
+                    avec Unreal Engine (Blueprint) et Unity (C#), ce qui me permet de comprendre 
+                    les contraintes techniques et de collaborer efficacement avec les programmeurs.
+                </p>
+
+                <!-- Skills Section -->
+                <div class="skills-section">
+                    <h3>Compétences principales</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">Level Design</div>
+                        <div class="skill-item">Narrative Design</div>
+                        <div class="skill-item">Game Design Document</div>
+                        <div class="skill-item">Unreal Engine</div>
+                        <div class="skill-item">Unity / C#</div>
+                        <div class="skill-item">Scénario & Écriture</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Ressources (Projects) -->
+        <section id="ressources" class="section ressources">
+            <div class="container">
+                <h2>Ressources & Projets</h2>
+                
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    
+                    <!-- Project Card 1: Vibration Game Jam -->
+                    <article class="project-card" onclick="openProject('vibration')">
+                        <div class="project-header">
+                            <h3>Vibration Game Jam</h3>
+                        </div>
+                        
+                        <div class="project-content">
+                            <p class="project-context">
+                                Un projet Game Jam où le thème était « Vibration ». Nous avions deux jours pour créer 
+                                un jeu complet en équipe de deux étudiants. Créé à Brassart Toulouse.
+                            </p>
+
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <span class="detail-label">Rôle:</span>
+                                    <span class="detail-value">Programmer, Level Designer, Sound Designer</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Durée:</span>
+                                    <span class="detail-value">2 jours</span>
+                                </div>
+                            </div>
+
+                            <!-- Project Link Button -->
+                            <button class="project-btn">Voir le projet →</button>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 2: Collage Game Jam -->
+                    <article class="project-card" onclick="openProject('collage')">
+                        <div class="project-header">
+                            <h3>Collage Game Jam</h3>
+                        </div>
+                        
+                        <div class="project-content">
+                            <p class="project-context">
+                                Un projet Game Jam créé lors d'un cours de Narrative Design. L'objectif était d'expérimenter 
+                                avec les polices et les styles d'écriture comme mécanisme de jeu principal. Une approche 
+                                innovante pour intégrer le narrative design directement dans l'expérience de jeu.
+                            </p>
+
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <span class="detail-label">Rôle:</span>
+                                    <span class="detail-value">Narrative Designer, Game Designer</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Durée:</span>
+                                    <span class="detail-value">1 semaine</span>
+                                </div>
+                            </div>
+
+                            <!-- Project Link Button -->
+                            <button class="project-btn">Voir le projet →</button>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+      <!-- Section 4: Audio -->
+<section id="audio" class="section audio">
+    <div class="container">
+        <h2>Compositions Audio</h2>
+        
+        <!-- Audio List -->
+        <div class="audio-list">
+            <div class="audio-item">
+                <div class="audio-info">
+                    <span class="audio-name">Seal</span>
+                    <span class="audio-genre">Medieval</span>
+                </div>
+                <audio controls class="audio-player">
+                    <source src="audio/seal.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="audio-item">
+                <div class="audio-info">
+                    <span class="audio-name">Ball</span>
+                    <span class="audio-genre">Medieval</span>
+                </div>
+                <audio controls class="audio-player">
+                    <source src="audio/ball.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="audio-item">
+                <div class="audio-info">
+                    <span class="audio-name">Peaceful Melody</span>
+                    <span class="audio-genre">Calm</span>
+                </div>
+                <audio controls class="audio-player">
+                    <source src="audio/peaceful-melody.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+	   <div class="audio-item">
+                <div class="audio-info">
+                    <span class="audio-name">Medival Melody</span>
+                    <span class="audio-genre">Ambient</span>
+                </div>
+                <audio controls class="audio-player">
+                    <source src="audio/CampingBar.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+        <!-- Section 5: CV -->
+        <section id="cv" class="section cv">
+            <div class="container">
+                <h2>CV</h2>
+                
+                <div class="cv-content">
+                    <p class="cv-text">
+                        Télécharge mon CV complet pour découvrir en détail mes expériences, 
+                        mes projets et mes compétences.
+                    </p>
+
+                    <!-- Download Button -->
+                    <a href="cv.pdf" download class="download-btn">
+                        <i class="fas fa-download"></i>
+                        Télécharger mon CV
+                    </a>
+                </div>
+
+                <!-- CV Details Section -->
+                <div class="cv-details">
+                    <div class="cv-column">
+                        <h3>Formation</h3>
+                        <div class="cv-item">
+                            <p class="cv-item-title">Game Design</p>
+                            <p class="cv-item-subtitle">Brassart Toulouse - 2ème année</p>
+                            <p class="cv-item-date">2024 - 2025</p>
+                        </div>
+                    </div>
+
+                    <div class="cv-column">
+                        <h3>Outils & Technologies</h3>
+                        <ul class="cv-list">
+                            <li>Unreal Engine (Blueprint)</li>
+                            <li>Unity (C#)</li>
+                            <li>Game Design Document</li>
+                            <li>Figma / Adobe Suite</li>
+                            <li>Tool Dev Unity</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECT DETAIL PAGES (HIDDEN) -->
+
+        <!-- Vibration Project Detail -->
+        <section id="project-vibration" class="section project-detail-section hidden">
+            <div class="container">
+                <div class="project-header-back">
+                    <button class="back-to-projects-btn" onclick="closeProject()">
+                        Retour aux projets
+                    </button>
+                </div>
+                
+                <div class="project-detail-content">
+                    <h1 class="project-title">Vibration Game Jam</h1>
+                    <p class="project-hero-subtitle">Un défi de création de jeu sur 48 heures</p>
+
+                    <!-- Project Info Grid -->
+                    <div class="project-info-grid">
+                        <div class="info-card">
+                            <h3>Contexte</h3>
+                            <p>
+                                Un projet Game Jam où le thème était « Vibration ». Nous avions deux jours pour créer 
+                                un jeu complet en équipe de deux étudiants. Ce projet a été créé lors de mes études 
+                                à Brassart Toulouse.
+                            </p>
+                        </div>
+
+                        <div class="info-card">
+                            <h3>Rôle</h3>
+                            <p>
+                                Programmer<br>
+                                Level Designer<br>
+                                Sound Designer
+                            </p>
+                        </div>
+
+                        <div class="info-card">
+                            <h3>Durée</h3>
+                            <p>
+                                2 jours<br>
+                                <span class="detail-meta">Format Game Jam</span>
+                            </p>
+                        </div>
+
+                        <div class="info-card">
+                            <h3>Équipe</h3>
+                            <p>
+                                2 étudiants<br>
+                                <span class="detail-meta">Brassart Toulouse</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Project Description -->
+                    <div class="project-description">
+                        <h2>À propos du projet</h2>
+                        <p>
+                            Vibration Game Jam a été une expérience créative intense où nous devions développer 
+                            un jeu complet autour du thème « Vibration ». Dans une fenêtre courte de 48 heures, 
+                            notre équipe de deux a réussi à créer un jeu jouable qui explore le concept de vibration 
+                            comme élément à la fois mécanique et narratif.
+                        </p>
+                        <p>
+                            En tant que programmeur, j'ai géré les mécaniques de jeu principales et l'architecture générale. 
+                            Mon travail de Level Design s'est concentré sur la création de défis engageants intégrant 
+                            la mécanique de vibration de manière significative. J'ai également contribué aux éléments 
+                            de Sound Design pour améliorer l'expérience du joueur.
+                        </p>
+                    </div>
+
+                    <!-- Itch Link -->
+                    <div class="github-section">
+                        <h3>Jouer au jeu</h3>
+                        <a href="https://korimaw.itch.io/willowingrootsexe" target="_blank" class="github-btn">
+                            <i class="fas fa-gamepad"></i>
+                            Jouer sur Itch.io
+                        </a>
+                    </div>
+
+                    <!-- Gallery -->
+                    <div class="gallery-section">
+                        <h2>Galerie du projet</h2>
+                        <div class="gallery-grid">
+                            <div class="gallery-item">
+                                <div class="gallery-placeholder"></div>
+                            </div>
+                            <div class="gallery-item">
+                                <div class="gallery-placeholder"></div>
+                            </div>
+                            <div class="gallery-item">
+                                <div class="gallery-placeholder"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Collage Project Detail -->
+        <section id="project-collage" class="section project-detail-section hidden">
+            <div class="container">
+                <div class="project-header-back">
+                    <button class="back-to-projects-btn" onclick="closeProject()">
+                        Retour aux projets
+                    </button>
+                </div>
+                
+                <div class="project-detail-content">
+                    <h1 class="project-title">Collage Game Jam</h1>
+                    <p class="project-hero-subtitle">La typographie et la narration comme mécaniques de jeu</p>
+
+                    <!-- Project Info Grid -->
+                    <div class="project-info-grid">
+                        <div class="info-card">
+                            <h3>Contexte</h3>
+                            <p>
+                                Un projet Game Jam créé lors d'un cours de Narrative Design. L'objectif était d'expérimenter 
+                                avec les polices et les styles d'écriture comme mécanisme de jeu principal. Une approche 
+                                innovante pour intégrer le narrative design directement dans l'expérience de jeu.
+                            </p>
+                        </div>
+
+                        <div class="info-card">
+                            <h3>Rôle</h3>
+                            <p>                               
+                                Game Designer<br>
+                                Level Designer
+                            </p>
+                        </div>
+
+                        <div class="info-card">
+                            <h3>Durée</h3>
+                            <p>
+                                1 semaine<br>
+                                <span class="detail-meta">Travail de classe</span>
+                            </p>
+                        </div>
+
+                        <div class="info-card">
+                            <h3>Focus</h3>
+                            <p>                             
+                                <span class="detail-meta">Typographie & Écriture</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Project Description -->
+                    <div class="project-description">
+                        <h2>À propos du projet</h2>
+                        <p>
+                            Collage Game Jam a été un projet unique qui a repoussé les limites du narrative design 
+                            dans le développement de jeux vidéo. Le concept clé était d'utiliser les polices et les 
+                            styles d'écriture non seulement comme éléments visuels, mais comme mécaniques de jeu 
+                            fondamentales affectant directement l'expérience et la compréhension du joueur.
+                        </p>
+                        <p>
+                            Ce projet m'a enseigné comment intégrer la narration directement dans les mécaniques, 
+                            rendant le narrative design inséparable du game design. En traitant la typographie et le 
+                            style d'écriture comme des éléments interactifs, nous avons créé un jeu où la manière 
+                            dont l'histoire est présentée est aussi importante que l'histoire elle-même.
+                        </p>
+                        <p>
+                            Cette expérience a renforcé ma compréhension de la façon dont le narrative design peut 
+                            améliorer le gameplay, et comment les limitations (en l'occurrence, la focus sur la typographie) 
+                            peuvent mener à l'innovation créative.
+                        </p>
+                    </div>
+
+                    <!-- Itch Link -->
+                    <div class="github-section">
+                        <h3>Jouer au jeu</h3>
+                        <a href="https://n0ovaa.itch.io/c-est-quoi-etre-grand" target="_blank" class="github-btn">
+                            <i class="fas fa-gamepad"></i>
+                            Jouer sur Itch.io
+                        </a>
+                    </div>
+
+                    <!-- Gallery -->
+                    <div class="gallery-section">
+                        <h2>Galerie du projet</h2>
+                        <div class="gallery-grid">
+                            <div class="gallery-item">
+                                <div class="gallery-placeholder"></div>
+                            </div>
+                            <div class="gallery-item">
+                                <div class="gallery-placeholder"></div>
+                            </div>
+                            <div class="gallery-item">
+                                <div class="gallery-placeholder"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Footer Content -->
+            <div class="footer-content">
+                <p>&copy; 2026 Louis Erbisti. Tous droits réservés.</p>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="footer-links">
+                <!-- LinkedIn Icon Link -->
+                <a href="https://linkedin.com/in/louis-erbisti" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="footer-icon-link linkedin-link"
+                   title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+
+                <!-- Email Link -->
+                <a href="mailto:louis.erbisti@example.com" 
+                   class="footer-email-link"
+                   title="Envoyer un email">
+                    louis.erbisti@example.com
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript pour gérer les projets -->
+    <script>
+        function openProject(projectId) {
+            // Masquer TOUTES les sections
+            document.getElementById('accueil').style.display = 'none';
+            document.getElementById('apropos').style.display = 'none';
+            document.getElementById('ressources').style.display = 'none';
+            document.getElementById('audio').style.display = 'none';
+            document.getElementById('cv').style.display = 'none';
+            
+            // Masquer TOUS les projets détail
+            document.getElementById('project-vibration').style.display = 'none';
+            document.getElementById('project-collage').style.display = 'none';
+            
+            // Afficher SEULEMENT le projet cliqué
+            document.getElementById('project-' + projectId).style.display = 'flex';
+            document.getElementById('project-' + projectId).classList.remove('hidden');
+            
+            // Scroll vers le haut
+            window.scrollTo(0, 0);
+        }
+
+        function closeProject() {
+            // Masquer TOUS les projets détail
+            document.getElementById('project-vibration').style.display = 'none';
+            document.getElementById('project-collage').style.display = 'none';
+            
+            // Afficher TOUTES les sections
+            document.getElementById('accueil').style.display = 'flex';
+            document.getElementById('apropos').style.display = 'flex';
+            document.getElementById('ressources').style.display = 'flex';
+            document.getElementById('audio').style.display = 'flex';
+            document.getElementById('cv').style.display = 'flex';
+            
+            // Scroll vers les projets
+            document.getElementById('ressources').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
